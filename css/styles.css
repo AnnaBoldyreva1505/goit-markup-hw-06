@@ -297,6 +297,18 @@ img {
 
 .footer-item-logo {
     fill: var(--text-white);
+    width: 20px;
+    height: 20px;
+}
+
+.footer-form{
+    /* margin-left: 93px; */
+}
+
+.footer-subscription{
+    display: flex;
+    flex-direction: column;
+    margin-left: 93px;
 }
 
 
@@ -832,3 +844,110 @@ pointer-events: none;
 
 
 /* =====================test======================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ПРАКТИКА ФОРМ */
+textarea{
+    resize: none;
+}
+
+.form{
+    width: 680px;
+    outline: 1px solid tomato;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.form-field{
+    /* outline: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-field input{
+    margin: 0;
+    padding: 10px 20px;
+    border-radius: 2px;
+    border: 1px solid #2a2a2a;
+}
+
+.form-field label{
+    margin-bottom: 5px;
+}
+
+.form-field input::placeholder{
+    color: green;
+}
+
+.group{
+    margin-bottom: 20px;   
+}
+
+.group-title{
+margin-top: 0;
+margin-bottom: 10px;
+}
+
+.topic-option, 
+.experience-option{
+padding: 0;
+margin: 0;
+list-style: none;
+}
+
+.topic-option input[type='checkbox']{
+   width: 10px;
+   height: 10px;
+
+}
+
+.topic-option li{
+    display: flex;
+    align-items: center;
+
+}
+
+.topic-option label{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.form .date{
+    border-color:red;
+    border-width: 5px;
+    padding: 20px 40px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.comment{
+padding: 8px;
+}
