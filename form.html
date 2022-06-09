@@ -62,19 +62,33 @@
 
             <!-- ИМЯ -->
             <div class="form-field">
-            <label for="name">Имя</label>
-            <input type="text" name="name" id="name" placeholder="Иван Иванович" autofocus>
+                <input type="text" name="name" id="name" placeholder="Иван Иванович" autofocus>
+                <label for="name" class="form-label">Имя</label>
             </div>
             <!-- ТЕЛЕФОН -->
             <div class="form-field">
-            <label for="tel">Телефон</label>
+            <label for="tel" class="form-label">Телефон</label>
             <input type="tel" name="tel" id="tel">
 </div>
             <!-- МЕЙЛ -->
             <div class="form-field">
-            <label for="mail">Почта</label>
+            <label for="mail" class="form-label">Почта</label>
             <input type="email" name="mail" id="mail">
             </div>
+
+            <div class="form-field">
+                <label for="comment">Оставьте комментарий</label>
+                <textarea class="comment" name="comment" id="comment" rows="10" placeholder="Введите описание"></textarea>
+            </div>
+
+            <div class="form-field">
+                <input type="checkbox" name="policy" id="policy">
+                <label for="policy">Согласен на все</label>
+            </div>
+            
+            <button type="submit">Отправить</button>
+
+
             <!-- ЧЕКБОКСЫ у группы обязателен "name", через флексбокс не работает fieldset - для этого нужно input обернуть в <div role"group"-->
             <div role="group" class="group">
                 <h2 class="group-title">Заголовок</h2>
@@ -119,17 +133,9 @@
             </div>
 
             <!-- КОММЕНТАРИИ -->
-            <div class="form-field">
-                <label for="comment">Оставьте комментарий</label>
-                <textarea class="comment" name="comment" id="comment" rows="10" placeholder="Введите описание"></textarea>
-            </div>
+           
 
-            <div class="form-field">
-                <input type="checkbox" name="policy" id="policy">
-                <label for="policy">Согласен на все</label>
-            </div>
-
-            <button type="submit">Отправить</button>
+         
 
         </form>
 
